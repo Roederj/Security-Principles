@@ -1,0 +1,50 @@
+﻿
+/******************Code Explanation Styles**********/
+div.explainCode {
+    float: left;
+    text-align: center;
+    width: 15%;
+    margin: 5em;
+    border: solid;
+    border-width: 3px;
+}
+
+
+/*******************All Code Styles*****************/
+div.code p {
+    border: dashed;
+    border-width: 3px;
+    padding: 1em;
+}
+
+
+/********************Bad Code Styles****************/
+p.badCode {
+    margin: 5em;
+    float: left;
+}
+
+/* Styles in the bad code to highlight improper code techniques */ 
+span.badText {
+    background-color: rgb(255, 0, 0);
+}
+
+span.badText:hover {
+    background-color: rgb(255, 128, 128);
+}
+
+
+/***********************Good Code Styles**************/
+p.goodCode {
+    margin: 5em;
+    float: left;
+}
+
+/*Styles in good code to highlight differences from bad code */
+span.goodText {
+    background-color: rgb(51, 204, 51);
+}
+
+span.goodText:hover {
+    background-color: rgb(152, 230, 152);
+}

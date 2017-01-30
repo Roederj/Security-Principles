@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Hiding</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/InfoHiding.js"></script>
+    <link href="css/InfoHiding.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="code">
+        <p class="badCode">
+            class PlayerCharacter <br />
+            { <br />
+            <span class="badText" id="bad1">public:</span> <br />
+            int x_position; <br />
+            int y_position; <br />
+            int calculateNewPostion; <br />
+            int changePosition; <br />
+            } <br />
+
+            void main() <br />
+            { <br />
+            PlayerCharacter PlayerOne; <br />
+            <span class="badText" id="bad2">
+                PlayerOne.calculateNewPostion(); <br />
+                PlayerOne.changePosition();
+            </span> <br />
+            }
+        </p>
+    </div>
+
+    <div class="explainCode">
+        <div id="explainBad1"><p>asadfasdfasdfasd</p></div>
+        <div id="explainBad2"><p>asdadsfafdgsdfgsdfg</p></div>
+        <div id="explainGood1"><p>asdfasdfasdfadsfdsaf</p></div>
+        <div id="explainGood2"><p>adsfasdfsdafsdfsdf</p></div>
+        <div id="explainGood2"><p>asdfsadfasdfsadfasdf</p></div>
+    </div>
+
+
+    <div class="code">
+        <p class="goodCode">
+            class PlayerCharacter <br />
+            { <br />
+            <span class="goodText" id="good1">private:</span> <br />
+            int x_position; <br />
+            int y_position; <br />
+            int calculateNewPostion(); <br />
+            void moveNewPosition(); <br />
+            public: <br />
+            <span class="goodText" id="good2">void getInput();</span> <br />
+            } <br />
+
+            void main() <br />
+            { <br />
+            PlayerCharacter PlayerOne; <br />
+            <span class="goodText" id="good3">PlayerOne.getInput();</span> <br />
+            }
+        </p>
+    </div>
+
+</body>
+</html>
