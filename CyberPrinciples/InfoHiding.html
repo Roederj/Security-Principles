@@ -11,7 +11,7 @@
         <p class="badCode">
             class PlayerCharacter <br />
             { <br />
-            <span class="badText" id="bad1">public:</span> <br />
+            <span class="badText" id="bad1" onmouseover="showExplanation(this.id)">public:</span> <br />
             int x_position; <br />
             int y_position; <br />
             int calculateNewPostion; <br />
@@ -21,7 +21,7 @@
             void main() <br />
             { <br />
             PlayerCharacter PlayerOne; <br />
-            <span class="badText" id="bad2">
+            <span class="badText" id="bad2" onmouseover="showExplanation(this.id)">
                 PlayerOne.calculateNewPostion(); <br />
                 PlayerOne.changePosition();
             </span> <br />
@@ -30,11 +30,12 @@
     </div>
 
     <div class="explainCode">
-        <div id="explainBad1"><p>asadfasdfasdfasd</p></div>
-        <div id="explainBad2"><p>asdadsfafdgsdfgsdfg</p></div>
-        <div id="explainGood1"><p>asdfasdfasdfadsfdsaf</p></div>
-        <div id="explainGood2"><p>adsfasdfsdafsdfsdf</p></div>
-        <div id="explainGood2"><p>asdfsadfasdfsadfasdf</p></div>
+        <div id="explainDefault">Default</div>
+        <div id="explainBad1"><p>bad1</p></div>
+        <div id="explainBad2"><p>bad2</p></div>
+        <div id="explainGood1"><p>good1</p></div>
+        <div id="explainGood2"><p>good2</p></div>
+        <div id="explainGood3"><p>good3</p></div>
     </div>
 
 
@@ -42,19 +43,19 @@
         <p class="goodCode">
             class PlayerCharacter <br />
             { <br />
-            <span class="goodText" id="good1">private:</span> <br />
+            <span class="goodText" id="good1" onmouseover="showExplanation(this.id)">private:</span> <br />
             int x_position; <br />
             int y_position; <br />
             int calculateNewPostion(); <br />
             void moveNewPosition(); <br />
             public: <br />
-            <span class="goodText" id="good2">void getInput();</span> <br />
+            <span class="goodText" id="good2" onmouseover="showExplanation(this.id)">void getInput();</span> <br />
             } <br />
 
             void main() <br />
             { <br />
             PlayerCharacter PlayerOne; <br />
-            <span class="goodText" id="good3">PlayerOne.getInput();</span> <br />
+            <span class="goodText" id="good3" onmouseover="showExplanation(this.id)">PlayerOne.getInput();</span> <br />
             }
         </p>
     </div>
