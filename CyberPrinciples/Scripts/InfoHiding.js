@@ -20,14 +20,13 @@ function hideExplanations() {
 }
 
 //Shows explanations on mouse hover
-function showExplanation(id) {
+function showExplanation(whichStatement) {
     var showDivs = document.getElementById("explainDefault");
 
-    window.alert(showDivs.textContent);
-
-    switch (id) {
+    switch (whichStatement.id) {
         case "bad1":
             showDivs = document.getElementById("explainBad1");
+            window.alert(showDivs[0]);
             break;
         case "bad2":
             showDivs = document.getElementById("explainBad2");
@@ -41,8 +40,7 @@ function showExplanation(id) {
         case "good3":
             showDivs = document.getElementById("explainGood3");
             break;
-
-            window.alert(showDivs[0].textContent);
-            showDivs[0].style.visibility = "visible";
     }
+    window.alert(showDivs[0]);
+    showDivs[0].style.visibility = "visible";
 }
