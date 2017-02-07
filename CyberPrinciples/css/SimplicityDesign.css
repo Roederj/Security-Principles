@@ -1,0 +1,29 @@
+﻿
+/*******Bad Design Styles*****/
+.badDesign {
+    margin: auto;
+    width: 50%;
+    border: dashed;
+    border-width: 3px;
+}
+
+.badDesign p {
+    padding: 1em;
+    float: left;
+}
+
+.badDesign input {
+    padding: 1em;
+    float: left;
+    clear: left;
+}
+
+
+/*******Good Design Styles*/
+.goodDesign {
+    margin: auto;
+    width: 50%;
+    border: dashed;
+    border-width: 3px;
+}
+
