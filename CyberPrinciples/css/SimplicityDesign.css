@@ -1,29 +1,35 @@
 ﻿
+div * {
+    display: inline;
+}
+
 /*******Bad Design Styles*****/
-.badDesign {
+
+div.badDesign {
     margin: auto;
-    width: 50%;
+    width: 35%;
     border: dashed;
     border-width: 3px;
 }
 
-.badDesign p {
+div.badDesign p {
     padding: 1em;
-    float: left;
+    text-align: left;
 }
 
-.badDesign input {
+div.badDesign input {
     padding: 1em;
-    float: left;
-    clear: left;
 }
 
 
 /*******Good Design Styles*/
-.goodDesign {
+div.goodDesign {
     margin: auto;
-    width: 50%;
+    width: 35%;
     border: dashed;
     border-width: 3px;
 }
 
+div.goodDesign p {
+    text-align: left;
+}
