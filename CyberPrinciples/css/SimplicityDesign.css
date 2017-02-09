@@ -3,33 +3,47 @@ div * {
     display: inline;
 }
 
+div {
+    margin: auto;
+    width: 50%;
+    padding: 1em;
+    text-wrap: normal;
+}
+
+div p {
+    text-align: left;
+    width: 30%;
+}
 /*******Bad Design Styles*****/
 
 div.badDesign {
-    margin: auto;
-    width: 35%;
+    width: 30%;
     border: dashed;
     border-width: 3px;
+    padding: 1em;
 }
 
 div.badDesign p {
-    padding: 1em;
     text-align: left;
 }
 
-div.badDesign input {
-    padding: 1em;
-}
 
 
 /*******Good Design Styles*/
 div.goodDesign {
-    margin: auto;
-    width: 35%;
+    width: 30%;
     border: dashed;
     border-width: 3px;
+    padding: 1em;
 }
 
 div.goodDesign p {
     text-align: left;
 }
+
+div.goodDesign input {
+    float: right;
+    clear: right;
+    margin-right: 30px;
+}
+
