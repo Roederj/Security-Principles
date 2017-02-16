@@ -26,7 +26,6 @@ function showExplanation(whichStatement) {
     switch (whichStatement.id) {
         case "bad1":
             showDivs = document.getElementById("explainBad1");
-            window.alert(showDivs[0]);
             break;
         case "bad2":
             showDivs = document.getElementById("explainBad2");

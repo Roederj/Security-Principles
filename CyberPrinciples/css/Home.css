@@ -1,0 +1,11 @@
+﻿
+#navMenu {
+    margin: auto;
+    width: 40%;
+    text-align: left;
+    padding-left: 3em;
+}
+
+#navMenu li {
+    list-style-type: none;
+}
