@@ -1,45 +1,65 @@
 ﻿
-window.onload = hideExplanations;
+window.onload = hideAll;
 
-// Function to hide goodCode on page load
-//function hideGoodCode() {
-//    var hideCode = document.getElementsByClassName("goodCode");
-
-//    for (var i = 0; i < hideCode.length; i++) {
-//        hideCode[i].style.visibility = "hidden";
-//    }
-
-//    //    window.alert(arr[0].textContent);
-//}
-
-// Hides Explanations on page load
-function hideExplanations() {
+// Hides all explanations except default on page load
+function hideAll() {
     var hideDivs = document.getElementsByClassName("explainCode");
-
     hideDivs[0].style.visibility = "hidden";
+
+    var showDefault = document.getElementById("explainDefault");
+    showDefault.style.visibility = "visible";
 }
+
+
+//Hide explanations on mouseout
+function hideExplanations(whichStatement) {
+    var showInfo = document.getElementById("explainDefault");
+    showInfo.style.visibility = "visible";
+
+    switch (whichStatement) {
+        case "bad1":
+            showInfo = document.getElementById("explainBad1");
+            break;
+        case "bad2":
+            showInfo = document.getElementById("explainBad2");
+            break;
+        case "good1":
+            showInfo = document.getElementById("explainGood1");
+            break;
+        case "good2":
+            showInfo = document.getElementById("explainGood2");
+            break;
+        case "good3":
+            showInfo = document.getElementById("explainGood3");
+            break;
+    }
+
+    showInfo.style.visibility = "hidden";
+}
+
 
 //Shows explanations on mouse hover
 function showExplanation(whichStatement) {
-    var showDivs = document.getElementById("explainDefault");
+    var showInfo = document.getElementById("explainDefault");
+    showInfo.style.visibility = "hidden";
 
-    switch (whichStatement.id) {
-        case "bad1":
-            showDivs = document.getElementById("explainBad1");
-            break;
-        case "bad2":
-            showDivs = document.getElementById("explainBad2");
-            break;
-        case "good1":
-            showDivs = document.getElementById("explainGood1");
-            break;
-        case "good2":
-            showDivs = document.getElementById("explainGood2");
-            break;
-        case "good3":
-            showDivs = document.getElementById("explainGood3");
-            break;
+    switch (whichStatement) {
+            case "bad1":
+                showInfo = document.getElementById("explainBad1");
+                break;
+            case "bad2":
+                showInfo = document.getElementById("explainBad2");
+                break;
+            case "good1":
+                showInfo = document.getElementById("explainGood1");
+                break;
+            case "good2":
+                showInfo = document.getElementById("explainGood2");
+                break;
+            case "good3":
+                showInfo = document.getElementById("explainGood3");
+                break;
     }
-    window.alert(showDivs[0]);
-    showDivs[0].style.visibility = "visible";
+
+    showInfo.style.visibility = "visible";
 }

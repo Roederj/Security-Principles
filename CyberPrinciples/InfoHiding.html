@@ -11,7 +11,7 @@
         <p class="badCode">
             class PlayerCharacter <br />
             { <br />
-            <span class="badText" id="bad1" onmouseover="showExplanation(this)">public:</span> <br />
+            <span class="badText" id="bad1" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">public:</span> <br />
             int x_position; <br />
             int y_position; <br />
             int calculateNewPostion; <br />
@@ -21,7 +21,7 @@
             void main() <br />
             { <br />
             PlayerCharacter PlayerOne; <br />
-            <span class="badText" id="bad2" onmouseover="showExplanation(this)">
+            <span class="badText" id="bad2" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">
                 PlayerOne.calculateNewPostion(); <br />
                 PlayerOne.changePosition();
             </span> <br />
@@ -43,19 +43,19 @@
         <p class="goodCode">
             class PlayerCharacter <br />
             { <br />
-            <span class="goodText" id="good1" onmouseover="showExplanation(this)">private:</span> <br />
+            <span class="goodText" id="good1" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">private:</span> <br />
             int x_position; <br />
             int y_position; <br />
             int calculateNewPostion(); <br />
             void moveNewPosition(); <br />
             public: <br />
-            <span class="goodText" id="good2" onmouseover="showExplanation(this)">void getInput();</span> <br />
+            <span class="goodText" id="good2" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">void getInput();</span> <br />
             } <br />
 
             void main() <br />
             { <br />
             PlayerCharacter PlayerOne; <br />
-            <span class="goodText" id="good3" onmouseover="showExplanation(this)">PlayerOne.getInput();</span> <br />
+            <span class="goodText" id="good3" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">PlayerOne.getInput();</span> <br />
             }
         </p>
     </div>
