@@ -9,6 +9,10 @@ div.explainCode {
     border-width: 3px;
 }
 
+div.explainCode div {
+    position: absolute;
+}
+
 
 /*******************All Code Styles*****************/
 div.code p {

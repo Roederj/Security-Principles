@@ -1,11 +1,31 @@
 ﻿
+body {
+    background-color: black;
+}
+
 #navMenu {
     margin: auto;
     width: 40%;
     text-align: left;
     padding-left: 3em;
+    border: groove;
+    border-width: 1em;
+    border-color: #00ffff;
 }
 
 #navMenu li {
-    list-style-type: none;
+    list-style: square;
+    color: #00ffff;
+    font-size: 4em;
+}
+
+#navMenu a:link {
+    text-decoration: none;
+}
+
+#navMenu a:visited {
+    list-style: square;
+    color: #00ffff;
+    font-size: 4em;
+    text-decoration: none;
 }

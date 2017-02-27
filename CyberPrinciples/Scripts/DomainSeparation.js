@@ -1,32 +1,37 @@
-﻿
-function cycleImages() {
-    var image1 = '<img src="Images/domainBad1.png" height="200" width="200"/>';
-    var image2 = '<img src="Images/domainBad2.png" height="200" width="200"/>';
-    var image3 = '<img src="Images/domainBad3.png" height="200" width="200"/>';
-    var image4 = '<img src="Images/domainBad4.png" height="200" width="200"/>';
-    var image5 = '<img src="Images/domainBad5.png" height="200" width="200"/>';
-    var image6 = '<img src="Images/domainBad6.png" height="200" width="200"/>';
-    var whichImage = document.images.item(0).src;
-    var newImage = whichImage;
-    //window.alert(whichImage);
+﻿window.onload = hideImages;
 
-    switch (whichImage) {
-        case (image1):
-            newImage = image2;
+function hideImages() {
+    var hidePics = document.getElementById("badDomainPics");
+    hidePics.style.visibility = "hidden";
+
+    var showFirst = document.getElementById("bad1");
+    showFirst.style.visibility = "visible";
+}
+
+function cycleImages(whichImage) {
+    var curImage = whichImage.id;
+    var nextImage = whichImage.id;
+
+    switch (curImage) {
+        case "bad1":
+            nextImage = document.getElementById("bad2");
             break;
-        case (image2):
-            newImage = image3;
+        case "bad2":
+            nextImage = document.getElementById("bad3");
             break;
-        case (image3):
-            newImage = image4;
+        case "bad3":
+            nextImage = document.getElementById("bad4");
             break;
-        case (image4):
-            newImage = image5;
+        case "bad4":
+            nextImage = document.getElementById("bad5");
             break;
-        case (image5):
-            newImage = image1;
+        case "bad5":
+            nextImage = document.getElementById("bad6");
+            break;
+        case "bad6":
+            nextImage = document.getElementById("bad1");
             break;
     }
-
-    document.images.item(0).write("newImage");
+    whichImage.style.visibility = "hidden";
+    nextImage.style.visibility = "visible";
 }

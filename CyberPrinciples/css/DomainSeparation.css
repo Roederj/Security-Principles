@@ -1,2 +1,9 @@
-﻿body {
+﻿
+#badDomainPics {
+    float: left;
+    margin: 5em;
+}
+
+#badDomainPics div {
+    position: absolute;
 }
