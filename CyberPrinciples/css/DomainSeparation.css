@@ -1,9 +1,18 @@
 ﻿
-#badDomainPics {
+#badDomainPics div{
     float: left;
-    margin: 5em;
+    margin-left: 5em;
 }
 
-#badDomainPics div {
+#badDomainPics div img {
+    position: absolute;
+}
+
+#goodDomainPics div {
+    float: right;
+    margin-right: 20em;
+}
+
+#goodDomainPics div img {
     position: absolute;
 }

@@ -29,3 +29,7 @@ body {
     font-size: 4em;
     text-decoration: none;
 }
+
+#navMenu a:hover {
+    text-decoration: underline;
+}

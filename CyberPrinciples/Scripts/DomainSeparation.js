@@ -1,14 +1,18 @@
 ﻿window.onload = hideImages;
 
 function hideImages() {
-    var hidePics = document.getElementById("badDomainPics");
-    hidePics.style.visibility = "hidden";
+    var hideBadPics = document.getElementById("badDomainPics");
+    hideBadPics.style.visibility = "hidden";
+    var hideGoodPics = document.getElementById("goodDomainPics");
+    hideGoodPics.style.visibility = "hidden";
 
-    var showFirst = document.getElementById("bad1");
-    showFirst.style.visibility = "visible";
+    var showBadFirst = document.getElementById("bad1");
+    showBadFirst.style.visibility = "visible";
+    var showGoodFirst = document.getElementById("good1");
+    showGoodFirst.style.visibility = "visible";
 }
 
-function cycleImages(whichImage) {
+function cycleBadImages(whichImage) {
     var curImage = whichImage.id;
     var nextImage = whichImage.id;
 
@@ -30,6 +34,34 @@ function cycleImages(whichImage) {
             break;
         case "bad6":
             nextImage = document.getElementById("bad1");
+            break;
+    }
+    whichImage.style.visibility = "hidden";
+    nextImage.style.visibility = "visible";
+}
+
+function cycleGoodImages(whichImage) {
+    var curImage = whichImage.id;
+    var nextImage = whichImage.id;
+
+    switch (curImage) {
+        case "good1":
+            nextImage = document.getElementById("good2");
+            break;
+        case "good2":
+            nextImage = document.getElementById("good3");
+            break;
+        case "good3":
+            nextImage = document.getElementById("good4");
+            break;
+        case "good4":
+            nextImage = document.getElementById("good5");
+            break;
+        case "good5":
+            nextImage = document.getElementById("good6");
+            break;
+        case "good6":
+            nextImage = document.getElementById("good1");
             break;
     }
     whichImage.style.visibility = "hidden";
