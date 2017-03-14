@@ -24,43 +24,31 @@ document.addEventListener("keydown", function (event) {
             if (!(movBox.style.left < (0 + 'px'))) {
                 movBox.style.left = (movBox.offsetLeft - 10) + 'px';
             }
-            else {
+            else if (movBox.style.left < (0 + 'px')) {
                 movBox.style.left = 0 +'px';
-            }
-            if (!(movBox.style.left > (window.innerWidth - movBox.style.left + 'px'))) {
-                movBox.style.left = (movBox.offsetLeft - 10) + 'px';
-            }
-            else {
-                movBox.style.left = window.innerWidth - movBox.style.left + 'px';
             }
             break;
         case 38: //Up
             if (!(movBox.style.top < (0 + 'px'))) {
                 movBox.style.top = (movBox.offsetTop - 10) + 'px';
             }
-            else {
+            else if (movBox.style.top < (0 + 'px')) {
                 movBox.style.top = (0 + 'px');
-            }
-            if (!(movBox.style.top > (window.innerHeight - movBox.style.top + 'px'))) {
-                movBox.style.top = (movBox.offsetTop - 10) + 'px';
-            }
-            else {
-                movBox.style.top = window.innerHeight - movBox.offsetHeight + 'px';
             }
             break;
         case 39: //Right
-            if (!(movBox.style.left > (window.innerWidth - movBox.style.left + 'px'))) {
+            if (!(movBox.style.left > (window.innerWidth + movBox.style.left + 'px'))) {
                 movBox.style.left = (movBox.offsetLeft + 10) + 'px';
             }
-            else {
+            else if (movBox.style.left > (window.innerWidth + movBox.style.left + 'px')) {
                 movBox.style.left = window.innerWidth - movBox.style.left + 'px';
             }
             break;
         case 40: //Down
-            if (!(movBox.style.top > (window.innerHeight - movBox.style.top + 'px'))) {
+            if (!(movBox.style.top > (window.innerHeight + movBox.style.left + 'px'))) {
                 movBox.style.top = (movBox.offsetTop + 10) + 'px';
             }
-            else {
+            else if (movBox.style.top > (window.innerHeight + movBox.style.left + 'px')) {
                 movBox.style.top = window.innerHeight - movBox.offsetHeight + 'px';
             }
             break;

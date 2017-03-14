@@ -1,6 +1,12 @@
 ﻿
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 #testDiv {
     position: absolute;
     left: 100px;
-    top: 50px;
+    top: 100px;
 }
