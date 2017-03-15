@@ -1,4 +1,4 @@
-﻿
+﻿/********************Pictures*****************/
 #badDomainPics div{
     float: left;
     margin-left: 5em;
@@ -15,4 +15,11 @@
 
 #goodDomainPics div img {
     position: absolute;
+}
+
+
+/*************Styles*********************/
+body {
+    background-color: black;
+    color: #00ffff;
 }

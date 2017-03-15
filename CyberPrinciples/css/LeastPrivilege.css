@@ -1,12 +1,13 @@
 ﻿
-body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
 #testDiv {
     position: absolute;
     left: 100px;
     top: 100px;
+}
+
+#limitDiv {    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
 }
