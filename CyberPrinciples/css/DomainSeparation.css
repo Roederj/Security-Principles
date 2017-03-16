@@ -4,20 +4,16 @@
     float: left;
 }
 
-#badDomainPics {
-    position: absolute;
-}
-
-#badDomainExplain {
-    float: left;
-}
-
 /*******************Good Domain Styles*****************/
 
-
+#goodDomain {
+    clear: both;
+    float: right;
+}
 
 /*************Styles*********************/
 body {
     background-color: white;
     color: black;
 }
+

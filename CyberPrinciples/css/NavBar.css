@@ -1,5 +1,5 @@
 ﻿ul {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     top: 0;
@@ -9,11 +9,14 @@
 }
 
 li {
+    width: 6%;
+    font-size: 14px;
     list-style: none;
     display: block;
     float: left;
-    border: black solid 2px;
-    padding: 1em;
+    clear: left;
+    border: black solid 3px;
+    padding: 0.5em 0.5em;
     color: black;
     background-color: white;
 }
