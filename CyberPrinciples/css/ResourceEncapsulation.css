@@ -1,0 +1,41 @@
+﻿body {
+    background-color: white;
+    color: black;
+}
+
+/******************************General Table Styles**********************/
+table {
+    border: solid 3px;
+    border-collapse: collapse;
+}
+
+table td {
+    border: solid 1px;
+}
+
+table h1 {
+    font-size: 1.3em;
+    padding: 5px 10px;
+}
+
+table p {
+    text-align: left;
+    padding-left: 5px;
+    font-size: 1em;
+}
+
+/************************************Bad Encapsulation Styles************************/
+#badEncap {
+    width: 45%;
+    float: left;
+    margin: 1em 2em;
+}
+
+#badEncapExplain {
+    width: 45%;
+    float: left;
+    border: groove;
+    border-width: 1em;
+    border-color: black;
+    margin: 1em 2em;
+}

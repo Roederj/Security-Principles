@@ -1,25 +1,23 @@
-﻿/********************Pictures*****************/
-#badDomainPics div{
+﻿/********************Bad Domain Styles******************/
+
+#badDomain {
     float: left;
-    margin-left: 5em;
 }
 
-#badDomainPics div img {
+#badDomainPics {
     position: absolute;
 }
 
-#goodDomainPics div {
-    float: right;
-    margin-right: 20em;
+#badDomainExplain {
+    float: left;
 }
 
-#goodDomainPics div img {
-    position: absolute;
-}
+/*******************Good Domain Styles*****************/
+
 
 
 /*************Styles*********************/
 body {
-    background-color: black;
-    color: #00ffff;
+    background-color: white;
+    color: black;
 }

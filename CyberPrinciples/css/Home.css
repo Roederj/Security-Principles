@@ -1,7 +1,7 @@
 ﻿
 body {
-    background-color: black;
-    color: #00ffff;
+    background-color: white;
+    color: black;
 }
 
 div {
@@ -11,7 +11,7 @@ div {
     width: 25%;
     border: groove;
     border-width: 1em;
-    border-color: #00ffff;
+    border-color: black;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
 
 #navMenu a:visited {
     list-style: square;
-    color: #00ffff;
+    color: black;
     font-size: 2em;
     text-decoration: none;
 }

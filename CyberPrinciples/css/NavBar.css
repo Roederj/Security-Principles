@@ -1,0 +1,33 @@
+﻿ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    display: block;
+    float: left;
+    border: black solid 2px;
+    padding: 1em;
+    color: black;
+    background-color: white;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
