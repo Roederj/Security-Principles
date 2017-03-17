@@ -1,49 +1,29 @@
 ﻿
-div * {
-    display: inline;
-}
 
-div {
+#badDesign, #goodDesign {
     margin: auto;
-    width: 50%;
+    width: 30%;
     padding: 1em;
-    text-wrap: normal;
-}
-
-div p {
-    text-align: left;
-    width: 30%;
-}
-/*******Bad Design Styles*****/
-
-div.badDesign {
-    width: 30%;
     border: dashed;
     border-width: 3px;
-    padding: 1em;
+    overflow: hidden;
 }
 
-div.badDesign p {
-    text-align: left;
+#fieldNames {
+    display: block;
+    float: left;
+    clear: left;
 }
 
-
-
-/*******Good Design Styles*/
-div.goodDesign {
-    width: 30%;
-    border: dashed;
-    border-width: 3px;
-    padding: 1em;
-}
-
-div.goodDesign p {
-    text-align: left;
-}
-
-div.goodDesign input {
+#fieldInputs {
+    display: block;
     float: right;
     clear: right;
-    margin-right: 30px;
 }
 
+#designExplain {
+    margin: auto;
+    width: 30%;
+    padding: 1em;
+    overflow: hidden;
+}
