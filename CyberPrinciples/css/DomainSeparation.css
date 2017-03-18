@@ -1,19 +1,23 @@
-﻿/********************Bad Domain Styles******************/
-
-#badDomain {
-    float: left;
-}
-
-/*******************Good Domain Styles*****************/
-
-#goodDomain {
-    clear: both;
-    float: right;
-}
-
-/*************Styles*********************/
-body {
+﻿body {
     background-color: white;
     color: black;
 }
+
+#domainExplain {
+    margin: auto;
+    width: 30%;
+    padding: 1em;
+}
+
+#goodDomain, #badDomain {
+    margin: auto;
+    width: 30%;
+    padding: 1em;
+}
+
+#goodDomain p, #badDomain p {
+    margin: auto;
+    font-style: italic;
+}
+
 
