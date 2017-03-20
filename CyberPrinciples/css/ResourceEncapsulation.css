@@ -3,6 +3,11 @@
     color: black;
 }
 
+#wrapEncap {
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
 /******************************General Table Styles**********************/
 table {
     border: solid 3px;
@@ -25,17 +30,18 @@ table p {
 }
 
 /************************************Bad Encapsulation Styles************************/
-#badEncap {
+#badEncap, #goodEncap {
     width: 45%;
     float: left;
     margin: 1em 2em;
 }
 
-#badEncapExplain {
+#badEncapExplain, #goodEncapExplain {
     width: 45%;
     float: left;
     border: groove;
     border-width: 1em;
     border-color: black;
     margin: 1em 2em;
+    padding: 0.5em 1em;
 }
