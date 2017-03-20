@@ -2,12 +2,11 @@
 #testDiv {
     position: absolute;
     left: 100px;
-    top: 100px;
+    top: 20px;
 }
 
-#limitDiv {    
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
+#limitDiv {   
+    position: absolute; 
+    left: 100px;
+    top: 20px;
 }

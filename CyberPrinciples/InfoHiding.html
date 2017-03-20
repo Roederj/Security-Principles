@@ -13,30 +13,31 @@
     <div w3-include-html="NavBar.html"></div>
     <script>w3IncludeHTML();</script>
     <!--End Navigation Script-->
+    <!--<div class="code">-->
+        <div id="badCode">
+            <p>
+                class PlayerCharacter <br />
+                { <br />
+                <span class="badText" id="bad1" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">public:</span> <br />
+                int x_position; <br />
+                int y_position; <br />
+                int calculateNewPostion; <br />
+                int changePosition; <br />
+                } <br />
 
-    <div class="code">
-        <p class="badCode">
-            class PlayerCharacter <br />
-            { <br />
-            <span class="badText" id="bad1" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">public:</span> <br />
-            int x_position; <br />
-            int y_position; <br />
-            int calculateNewPostion; <br />
-            int changePosition; <br />
-            } <br />
+                void main() <br />
+                { <br />
+                PlayerCharacter PlayerOne; <br />
+                <span class="badText" id="bad2" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">
+                    PlayerOne.calculateNewPostion(); <br />
+                    PlayerOne.changePosition();
+                </span> <br />
+                }
+            </p>
+        </div>
+    <!--</div>-->
 
-            void main() <br />
-            { <br />
-            PlayerCharacter PlayerOne; <br />
-            <span class="badText" id="bad2" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">
-                PlayerOne.calculateNewPostion(); <br />
-                PlayerOne.changePosition();
-            </span> <br />
-            }
-        </p>
-    </div>
-
-    <div class="explainCode">
+    <div id="explainCode">
         <div id="explainDefault"><p>Default</p></div>
         <div id="explainBad1"><p>bad1</p></div>
         <div id="explainBad2"><p>bad2</p></div>
@@ -46,26 +47,28 @@
     </div>
 
 
-    <div class="code">
-        <p class="goodCode">
-            class PlayerCharacter <br />
-            { <br />
-            <span class="goodText" id="good1" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">private:</span> <br />
-            int x_position; <br />
-            int y_position; <br />
-            int calculateNewPostion(); <br />
-            void moveNewPosition(); <br />
-            public: <br />
-            <span class="goodText" id="good2" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">void getInput();</span> <br />
-            } <br />
+    <!--<div class="code">-->
+        <div id="goodCode">
+            <p>
+                class PlayerCharacter <br />
+                { <br />
+                <span class="goodText" id="good1" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">private:</span> <br />
+                int x_position; <br />
+                int y_position; <br />
+                int calculateNewPostion(); <br />
+                void moveNewPosition(); <br />
+                public: <br />
+                <span class="goodText" id="good2" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">void getInput();</span> <br />
+                } <br />
 
-            void main() <br />
-            { <br />
-            PlayerCharacter PlayerOne; <br />
-            <span class="goodText" id="good3" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">PlayerOne.getInput();</span> <br />
-            }
-        </p>
-    </div>
+                void main() <br />
+                { <br />
+                PlayerCharacter PlayerOne; <br />
+                <span class="goodText" id="good3" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">PlayerOne.getInput();</span> <br />
+                }
+            </p>
+        </div>
+    <!--</div>-->
 
 </body>
 </html>

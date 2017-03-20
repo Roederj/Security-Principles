@@ -1,32 +1,37 @@
 ﻿
-/******************Code Explanation Styles**********/
-div.explainCode {
-    float: left;
-    text-align: center;
-    width: 15%;
-    margin: 5em;
-    border: solid;
-    border-width: 3px;
-}
-
-div.explainCode div {
-    position: absolute;
-}
-
-
 /*******************All Code Styles*****************/
-div.code p {
+ #badCode, #goodCode {
+    display: block;
+    position: relative;
+    width: 20%;
+    overflow: hidden;
     border: dashed;
     border-width: 3px;
     padding: 1em;
-}
-
-
-/********************Bad Code Styles****************/
-p.badCode {
-    margin: 5em;
     float: left;
+    margin: 2em;
 }
+
+
+/******************Code Explanation Styles**********/
+#explainCode {
+    display: block;
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+
+#explainCode div {
+    width: 20%;
+    top: 0;
+    left: 0;
+    border: solid;
+    border-width: 3px;
+    position: absolute;
+    overflow: hidden;
+}
+
 
 /* Styles in the bad code to highlight improper code techniques */ 
 span.badText {
@@ -37,12 +42,6 @@ span.badText:hover {
     background-color: rgb(255, 128, 128);
 }
 
-
-/***********************Good Code Styles**************/
-p.goodCode {
-    margin: 5em;
-    float: left;
-}
 
 /*Styles in good code to highlight differences from bad code */
 span.goodText {

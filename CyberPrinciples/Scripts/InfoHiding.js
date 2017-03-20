@@ -3,8 +3,8 @@ window.onload = hideAll;
 
 // Hides all explanations except default on page load
 function hideAll() {
-    var hideDivs = document.getElementsByClassName("explainCode");
-    hideDivs[0].style.visibility = "hidden";
+    var hideDivs = document.getElementById("explainCode");
+    hideDivs.style.visibility = "hidden";
 
     var showDefault = document.getElementById("explainDefault");
     showDefault.style.visibility = "visible";
