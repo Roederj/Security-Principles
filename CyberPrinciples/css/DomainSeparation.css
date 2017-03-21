@@ -3,6 +3,20 @@
     color: black;
 }
 
+h1 {
+    text-decoration: underline;
+}
+
+#wrapDomain {
+    float: left;
+    margin-left: 15%;
+    margin-top: 1%; 
+    border: groove black 10px;
+    padding: 0.3em 1em;
+    width: 50%;
+}
+}
+
 #domainExplain {
     margin: auto;
     width: 30%;
