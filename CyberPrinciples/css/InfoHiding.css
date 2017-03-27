@@ -1,18 +1,13 @@
 ﻿
-#infoCode {
-    margin-left: 10%;
-    margin-top: 5%;
-}
 
 /*******************All Code Styles*****************/
  #badCode, #goodCode {
     display: block;
     position: relative;
-    width: 20%;
+    width: 25%;
     border: dashed;
     border-width: 3px;
     padding: 1em;
-    /*float: left;*/
     margin: 2em;
 }
 

@@ -1,17 +1,7 @@
-﻿body {
-    background-color: white;
-    color: black;
+﻿span.goodText {
+    background-color: rgb(51, 204, 51);
 }
 
-h1 {
-    text-decoration: underline;
-}
-
-#explainModul {
-    float: left;
-    margin-left: 15%;
-    margin-top: 1%; 
-    border: groove black 10px;
-    padding: 0.3em 1em;
-    width: 50%;
+span.goodText:hover {
+    background-color: rgb(152, 230, 152);
 }

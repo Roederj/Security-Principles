@@ -1,13 +1,4 @@
-﻿body {
-    background-color: white;
-    color: black;
-}
-
-#wrapEncap {
-    margin-left: 10%;
-    margin-top: 2%;
-}
-
+﻿
 /******************************General Table Styles**********************/
 table {
     border: solid 3px;
@@ -31,17 +22,20 @@ table p {
 
 /************************************Bad Encapsulation Styles************************/
 #badEncap, #goodEncap {
-    width: 45%;
-    float: left;
+    width: 100%;
     margin: 1em 2em;
+}
+
+#badEncap table, #goodEncap table {
+    margin: auto;
 }
 
 #badEncapExplain, #goodEncapExplain {
     width: 45%;
-    float: left;
-    border: groove;
-    border-width: 1em;
+    border: solid;
+    border-width: 3px;
     border-color: black;
     margin: 1em 2em;
     padding: 0.5em 1em;
+    margin: auto;
 }

@@ -4,6 +4,7 @@
     <title>Simplicity of Design</title>
 	<meta charset="utf-8" />
     <link href="css/SimplicityDesign.css" rel="stylesheet" />
+    <link href="css/AllPages.css" rel="stylesheet" />
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
@@ -11,34 +12,36 @@
     <div w3-include-html="NavBar.html"></div>
     <script>w3IncludeHTML();</script>
     <!--End Navigation Script-->
-    <div id="badDesign">
-        <div id="fieldNames">
-            <p>Please enter your name and number:</p>
+    <div id="bodyWrap">
+        <h1>Simplicity of Design</h1>
+        <div id="badDesign">
+            <div id="fieldNames">
+                <p>Please enter your name and number:</p>
+            </div>
+            <div id="fieldInputs">
+                <p><input type="text" /></p>
+            </div>
         </div>
-        <div id="fieldInputs">
-            <p><input type="text" /></p>
-        </div>
-     </div>
 
-    <div id="designExplain">
-        <p>aldfkjladkjsflkjasdfldfkj. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf.ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. </p>
+        <div id="designExplain">
+            <p>aldfkjladkjsflkjasdfldfkj. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf.ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. </p>
+        </div>
+
+        <div id="goodDesign">
+            <div id="fieldNames">
+                <p>First Name:</p>
+                <p>Last Name:</p>
+                <p>Middle Initial:</p>
+                <p>Telephone Number: </p>
+            </div>
+            <div id="fieldInputs">
+                <p><input type="text" placeholder="First Name" /></p>
+                <p><input type="text" maxlength="1" placeholder="I" /></p>
+                <p><input type="text" placeholder="Last Name" /></p>
+                <p><input type="tel" maxlength="9" placeholder="000-000-0000" /></p>
+            </div>
+        </div>
     </div>
-
-    <div id="goodDesign">
-        <div id="fieldNames">
-            <p>First Name:</p>
-            <p>Last Name:</p>
-            <p>Middle Initial:</p>
-            <p>Telephone Number: </p>
-        </div>
-        <div id="fieldInputs">
-            <p><input type="text" placeholder="First Name" /></p>
-            <p><input type="text" maxlength="1" placeholder="I" /></p>
-            <p><input type="text" placeholder="Last Name" /></p>
-            <p><input type="tel" maxlength="9" placeholder="000-000-0000" /></p>
-        </div>
-    </div>
-
 
 </body>
 </html>
