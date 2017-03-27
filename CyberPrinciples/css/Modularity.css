@@ -1,7 +1,9 @@
-﻿span.goodText {
+﻿
+span.goodText {
     background-color: rgb(51, 204, 51);
 }
 
 span.goodText:hover {
     background-color: rgb(152, 230, 152);
 }
+

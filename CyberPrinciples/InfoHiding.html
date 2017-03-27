@@ -24,8 +24,8 @@
                     <span class="badText" id="bad1" onmouseover="showExplanation(this.id)" onmouseout="hideExplanations(this.id)">public:</span> <br />
                     int x_position; <br />
                     int y_position; <br />
-                    int calculateNewPostion; <br />
-                    int changePosition; <br />
+                    int calculateNewPostion(); <br />
+                    int changePosition(); <br />
                     } <br />
 
                     void main() <br />
@@ -41,8 +41,14 @@
 
             <div id="explainCode">
                 <div id="explainDefault"><p>Default</p></div>
-                <div id="explainBad1"><p>bad1</p></div>
-                <div id="explainBad2"><p>bad2</p></div>
+                <div id="explainBad1"><p>When a variable is made public, it becomes readily accessible to anyone making changes to the program.
+                 Changes to critical variables can be made, compromising how the program works.
+                 In a security setting, variables containing sensitive information can be easily retrieved.</p></div>
+                <div id="explainBad2"><p>As a general rule, as little of a program should be interfaced with as possible.
+                    In this case, as little of the program should be made public as possible.
+                    Every accessible function is a point through which someone can interact and affect a program.
+                    If enough functions are available, it can even be possible to determine the exact inner workings of the program.
+                    </p></div>
                 <div id="explainGood1"><p>good1</p></div>
                 <div id="explainGood2"><p>good2</p></div>
                 <div id="explainGood3"><p>good3</p></div>
