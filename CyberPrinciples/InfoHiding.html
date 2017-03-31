@@ -40,7 +40,17 @@
             </div>
 
             <div id="explainCode">
-                <div id="explainDefault"><p>Default</p></div>
+                <div id="explainDefault"><p>The principle of information hiding dictates that the integrity of a program is better maintained when
+                    certain aspects of its implementation are 'hidden,' as in not readily accessible by other developers.</p>
+                    <p>A common form of information hiding is an interface -- a collection of functions that are accessible to developers 
+                    using the program. The developer cannot interact with internal variables or functions directly; all interaction takes place through
+                    the interface. This prevents the developer from unintentionally accessing and changing critical sections of the program. This also, while not a catch-all
+                        security solution on its own, helps prevent malicious developers from observing how the program is structured.</p>
+                    <p> In the two C++ code snippets to either side, an interface has been enforced through the use of public and private classes. The code snippets 
+                    have been implemented without (left) and with (right) good information hiding technique. Hover over the highlighted areas to learn more about 
+                    a specific mistake or correction. 
+                    </p>
+                </div>
                 <div id="explainBad1"><p>When a variable is made public, it becomes readily accessible to anyone making changes to the program.
                  Changes to critical variables can be made, compromising how the program works.
                  In a security setting, variables containing sensitive information can be easily retrieved.
