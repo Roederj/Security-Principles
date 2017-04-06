@@ -14,6 +14,9 @@
     <!--End Navigation Script-->
     <div id="bodyWrap">
         <h1>Simplicity of Design</h1>
+           <p> When designing a piece of software, ease of use is important to both the end user and other programmers. For obvious reasons, simple, easy-to-use software is essential
+        for users. It prevents miscommunications and misuse, as well as the inevitable frustrations that follow. On the development side, the actual code behind the software should
+        be clean and well-organized. Well-designed code improves maintainability and helps prevent problems from arising in the first place. </p>
         <div id="badDesign">
             <div id="fieldNames">
                 <p>Please enter your name and number:</p>
@@ -24,7 +27,10 @@
         </div>
 
         <div id="designExplain">
-            <p>aldfkjladkjsflkjasdfldfkj. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf.ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. ldfkjladkjsflkjasdf. </p>
+            <p> Above is a poorly designed web form. The label may seem straightforward enough at first glance, but numerous issues arise once anyone attempts to use the form.
+            Does the programmer want the user's first and last name? First, middle, last? Just last? What number is it talking about? Suppose it's a phone number. How should
+            the phone number be formatted? (XXX)XXX-XXXX? X-XXX-XXX-XXXX? XXXXXXXXXX? None of these are specified or enforced, leaving it up to the user to guess and enter, 
+            possibly incorrectly. For the programmer, this means manually sifting through each entry and making sure it matches the required format.</p>
         </div>
 
         <div id="goodDesign">
@@ -40,6 +46,14 @@
                 <p><input type="text" placeholder="Last Name" /></p>
                 <p><input type="tel" maxlength="9" placeholder="000-000-0000" /></p>
             </div>
+        </div>
+
+        <div id="designExplain">
+            <p>
+                Here is a web form organized with simplicity of design in mind. The label have been separated for ease of reading and collecting. Everything is properly labeled
+                and explained to prevent misinterpretation. Further enforcment of the formats could be accomplished using regular expressions and validation controls, ensuring
+                the user only entered input in the format the programmer intentioned.
+            </p>
         </div>
     </div>
 
