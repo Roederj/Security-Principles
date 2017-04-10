@@ -14,6 +14,15 @@
 
     <div id="bodyWrap">
         <h1>Process Isolation</h1>
+        <p>
+            Conceptually, the principle of process isolation is similar to domain separation, the primary difference being that process isolation occurs at a lower level
+            than typical domain separation. Each instance of a program running on a computer is a process. Every process running on a computer is assigned space in memory;
+            this helps ensure each process operates as it should. 
+        </p>
+        <p>Ideally, each process should be independent of each other and be unaware of other processes. Properly separating processes helps prevent users from having inappropriate
+        access to information in secure applications. An important note on the topic of process isolation is the existence of DLL injections. During a DLL injection, knowledge
+        of certain memory spaces can be exploited to force a process to load a dynamic-link library. Code can then be run in the process's memory space to effect a different
+        process.  </p>
     </div>
 
 </body>

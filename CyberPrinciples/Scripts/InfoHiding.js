@@ -1,5 +1,6 @@
 ﻿
-window.onload = hideAll;
+window.onload = hideAll, bodyHeight;
+//window.onload = bodyHeight;
 
 // Hides all explanations except default on page load
 function hideAll() {
@@ -63,3 +64,4 @@ function showExplanation(whichStatement) {
 
     showInfo.style.visibility = "visible";
 }
+
