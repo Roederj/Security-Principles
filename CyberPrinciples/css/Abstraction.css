@@ -1,2 +1,17 @@
-﻿body {
+﻿div.code {
+    width: 20%;
+    border: 2px black solid;
+    float: left;
+    padding: 1em;
+    margin: 1em;
+}
+
+#codeExamples {
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+p {
+    clear: left;
 }

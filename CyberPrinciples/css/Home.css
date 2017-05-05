@@ -43,3 +43,26 @@ h1 {
 #navMenu a:hover {
     text-decoration: underline;
 }
+
+#extraInfo {
+    text-align: left;
+}
+
+#extraInfo li {
+    list-style: square;
+}
+
+#extraInfo a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#extraInfo a:visited {
+    list-style: square;
+    color: black;
+    text-decoration: none;
+}
+
+#extraInfo a:hover {
+    text-decoration: underline;
+}

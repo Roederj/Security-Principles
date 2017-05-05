@@ -20,7 +20,7 @@ table p {
     font-size: 1em;
 }
 
-/************************************Bad Encapsulation Styles************************/
+/************************************Encapsulation Styles************************/
 #badEncap, #goodEncap {
     width: 100%;
     margin: 1em 2em;
@@ -38,4 +38,8 @@ table p {
     margin: 1em 2em;
     padding: 0.5em 1em;
     margin: auto;
+}
+
+#goodEncapForm {
+    text-align: center;
 }

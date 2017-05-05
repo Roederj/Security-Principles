@@ -5,14 +5,14 @@
 	<meta charset="utf-8" />
     <link href="css/Modularity.css" rel="stylesheet" />
     <link href="css/AllPages.css" rel="stylesheet" />
+    <script src="Scripts/Modularity.js"></script>
     <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
-    <!--Script to Include Navigation Bar-->
-    <div w3-include-html="NavBar.html"></div>
-    <script>w3IncludeHTML();</script>
-    <!--End Navigation Script-->
-
+        <!--Script to Include Navigation Bar-->
+        <div w3-include-html="NavBar.html"></div>
+        <script>w3IncludeHTML();</script>
+        <!--End Navigation Script-->
     <!--Reference the navbar and border as an example-->
     <div id="bodyWrap">
         <h1>Modularity</h1>
@@ -25,8 +25,8 @@
         <div id="imageModul">
             <img src="Images/DomainSeparation/domainBad1.png" height="200" width="600"/>
         </div>
-        <p>The navigation menu and main body border are built in a modular fashion. By creating them as modules opposed 
-            to rebuilding them for each page, the likeliness that an error will be introduced is reduced.</p>
+        <p>On this site, the</p> <span onmouseover="lightNavMenu()" onmouseout="returnNavMenu()" class="goodText">navigation menu</span> <p>and</p> <span onmouseover="lightBorder()" onmouseout="returnBorder()" class="goodText">main body border</span> <p>are built in a modular fashion. By creating them as modules opposed 
+            to rebuilding them for each page, the likeliness that an error will be introduced is reduced. These portions of the page could also be used in other sites with minimal adjustments, another important part of modularity.</p>
     </div>
 </body>
 </html>

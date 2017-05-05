@@ -18,8 +18,28 @@
             Abstraction is the act of hiding complex operations under less complex interfaces. One of the most commonplace examples of abstraction is in programming languages
         themselves. To do something as simple as print 'Hello World' in the Assembly language requires intimate manipulation of computer registers, while in the C language
         printing is handled much more neatly with a simple 'printf()' statement. In the background, the same manipulation of registers is occuring. However, the programmer
-        has been provided with an interface (the C language, in this case), that prevents incorrect use of the system.   
+        has been provided with an interface (the C language, in this case), that prevents incorrect use of the system.  
+        <div id="codeExamples">
+            <div class="code">
+                <h3>C </h3>
+                <p>
+                    include <stdio.h>
+                        <br />
+                        int main()<br />
+                        {<br />
+                        printf("Hello World\n");<br />
+                        return 0;<br />
+                        }
+                </p>
+            </div>
 
+            <div class="code">
+                <h3>Python</h3>
+                <p>print("Hello World!")</p>
+            </div>
+        </div>   
+        <p>The two examples above show simple 'Hello World' programs, one in C and the other in Python. In C, the lower-level language, more lower-level commands must
+        be given to even print a single line. In Python, a higher-level, more abstracted language, a single line can accomplish the work of several. </p>
     </div>
 
 
